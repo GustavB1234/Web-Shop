@@ -1,0 +1,62 @@
+:root {
+
+/*************
+*** Colors ***
+*************/
+
+--color-white:#ffffff;
+--color-light:#f8f9fa;
+--color-light-gray: rgb(235, 235, 235);
+--color-gray: rgb(194, 194, 194);
+--color-dark-gray: #5c5c5c;
+--color-very-dark-gray: #444444;
+--color-green: rgb(0, 207, 0);
+--color-blue: rgb(85, 153, 255);
+
+
+
+    
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-dark-gray);
+    font-size: 1.6rem;
+    /* min-height: 100vh; */
+}
+
+
+a {
+    text-decoration: none;
+    color:var(--color-very-dark-gray);
+}
+
+a:hover {
+    text-decoration: none;
+    color:var(--color-blue);
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62,5%  */
+}
+
+
+

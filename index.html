@@ -1,12 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Shop</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b5c7bf8a9.js" crossorigin="anonymous"></script>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/flex.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/mediaqueries.css" rel="stylesheet">
 </head>
+
+
+
 <body>
-    
+
+
+    <!-- first header -->
+    <header class="d-flex justify-content-between align-items-center bg-very-dark-gray text-white">
+
+        <!-- sakerna till vänster-->
+        <div class="width-30 bg-red2">
+            <div
+                class="d-flex align-items-center justify-content-center width-9 border-small-light border-radius ml-4 bg-blue2">
+                <i class="fa fa-user text-size-xxs mr-2"></i>
+                <div class="mr-2">Log in</div><i class="fas fa-sort-down text-size-xxs"></i>
+            </div>
+        </div>
+
+        <!-- sakerna i mitten-->
+        <div class="d-flex align-items-center text-size-sm bg-blue2">
+            <i class="fas fa-phone-alt mr-2"></i>
+            <div class="mr-6">555 555 5555</div>
+            <a href="#" class="text-white text-decoration-none"><i class="fas fa-envelope mr-2"></i>info@mystore.com</a>
+        </div>
+
+        <!-- sakerna till höger-->
+        <div class="d-flex justify-content-right width-30 bg-red2">
+            <div class="d-flex align-items-center text-size-xxl mr-4 bg-blue2">
+                <a href="#" class="mr-2"><i class="fab fa-facebook-square text-white"></i></a>
+                <a href="#" class="mr-2"><i class="fab fa-twitter-square text-white"></i></a>
+                <a href="#" class="mr-2"><i class="fab fa-instagram-square text-white"></i></a>
+                <a href="#" class=""><i class="fab fa-pinterest-square text-white"></i></a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- second header -->
+    <header class="d-flex align-items-center py-6 px-4 bg-red2">
+
+        <!-- sakerna till vänster-->
+        <img class="width-7 mr-6 ml-2" src="images/logo/logo.png" alt="My Store logo">
+
+        <!-- sakerna i mitten-->
+        <div class="d-flex flex-grow mr-6 bg-blue">
+            <div
+                class="d-flex justify-content-center align-items-center bg-light-gray border-small-gray-t-b-l px-3-5 py-3">
+                <i class="fas fa-search text-dark-gray text-size-xxs"></i>
+            </div>
+            <input type="text" placeholder="Search products"
+                class="text-size-xxs width-100p p-2 border-small-gray text-green">
+        </div>
+
+        <!-- sakerna till höger-->
+        <div class="d-flex bg-red2">
+
+            <!-- heart -->
+            <a href="#" class="d-flex flex-column justify-content-center align-items-center bg-blue2">
+                <div class="position-relative">
+                    <i class="fas fa-heart text-size-lg"></i>
+                    <span
+                        class="d-flex justify-content-center align-items-center position-absolute icon-number-pos circle-size-small border-small-white text-white text-size-3xs bg-green">
+                        3
+                    </span>
+                </div>
+                <div class="text-size-3xs">
+                    FAVS
+                </div>
+            </a>
+
+
+            <div class="bg-gray width-0-1 ml-6 mr-4"></div>
+
+
+            <!-- shopping-cart -->
+            <a href="#" class="d-flex flex-column justify-content-center align-items-center position-relative bg-blue2">
+                <div class="position-relative">
+                    <i class="fas fa-shopping-cart text-size-lg"></i>
+                    <span
+                        class="d-flex justify-content-center align-items-center position-absolute icon-number-pos circle-size-small border-small-white text-white text-size-3xs bg-green">
+                        2
+                    </span>
+                </div>
+                <div class="text-size-3xs">
+                    $1453.5
+                </div>
+            </a>
+
+
+            <div class="bg-gray width-0-1 ml-6 mr-4"></div>
+
+
+            <!-- banknote -->
+            <a href="#"
+                class="d-flex flex-column justify-content-center align-items-center position-relative mr-2 bg-blue2">
+                <div class="position-relative">
+                    <i class="fas fa-file-invoice-dollar text-size-lg"></i>
+                    <span
+                        class="d-flex justify-content-center align-items-center position-absolute icon-number-pos circle-size-small border-small-white text-white text-size-3xs bg-green">
+                        0
+                    </span>
+                </div>
+                <div class="text-size-3xs">
+                    $0.00
+                </div>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- small line -->
+    <div class="d-flex flex-grow height-0-1 mb-6 bg-gray"></div>
+
+
+    <!-- main content  - menu area + show products area -->
+    <section class="d-flex bg-red2">
+
+        <!-- menu area -->
+        <nav class="d-flex flex-column ml-6 bg-red2">
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-hdd text-blue"></i>
+                    </div>
+                    <p>Computers & Accessories</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-desktop text-blue"></i>
+                    </div>
+                    <p>TV, Video & Audio</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-mobile-alt text-blue"></i>
+                    </div>
+                    <p>Smartphones & Tablets</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-camera-retro text-blue"></i>
+                    </div>
+                    <p>Photo Cameras</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-video text-blue"></i>
+                    </div>
+                    <p>Video Cameras</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-headphones text-blue"></i>
+                    </div>
+                    <p>Headphones</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-clock text-blue"></i>
+                    </div>
+                    <p>Wearable Electronics</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-images text-blue"></i>
+                    </div>
+                    <p>Printers & Ink</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-crosshairs text-blue"></i>
+                    </div>
+                    <p>Video Games</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-volume-down text-blue"></i>
+                    </div>
+                    <p>Speakers & Home Music</p>
+                </a>
+            </section>
+
+            <!-- one box in the menu -->
+            <section class="border-small-gray-l-r-b p-4 pr-8">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center width-2 mr-4 bg-red2">
+                        <i class="fas fa-server text-blue"></i>
+                    </div>
+                    <p>HDD / SSD Data Storage</p>
+                </a>
+            </section>
+
+
+
+        </nav>
+
+
+        <!-- show products area -->
+        <section class="ml-6 bg-green">
+
+            <!-- one box -->
+            <section class="d-flex p-4 bg-blue">
+                <div class="bg-red">
+                    <img src="" alt="">
+                </div>
+                <div class="bg-red">
+                    right
+                </div>
+            </section>
+
+        </section>
+
+    </section>
+
+
+
+
+
 </body>
+
 </html>

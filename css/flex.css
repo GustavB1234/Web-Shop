@@ -1,0 +1,32 @@
+/**************
+*** Dispaly ***
+**************/
+
+.d-flex { display: flex; }
+.d-none { display: none;}
+
+
+
+/**************
+*** Flex ***
+**************/
+
+.flex-grow { flex-grow: 1; }
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-grow { flex-grow: 1; }
+.flex-wrap {flex-wrap: wrap; }
+
+
+/*********************
+*** Align & Justify***
+*********************/
+
+.justify-content-between { justify-content: space-between; } 
+.justify-content-center { justify-content: center; } 
+.justify-content-right { justify-content: right; } 
+.justify-content-around { justify-content: space-around; } 
+.align-items-center{ align-items: center; } 
+.align-self-right { align-self: right;}
+.align-self-center { align-self: center;}
