@@ -4,6 +4,7 @@
 .mr-auto, .mx-auto{ margin-right: auto;}
 .ml-auto, .mx-auto{ margin-left: auto;}
 
+.m-0 { margin: 0rem; }
 .m-6 { margin: 1.5rem; }
 .m-15 { margin: 3.75rem ;}
 
@@ -37,6 +38,7 @@
 /**************
 *** Padding ***
 ***************/
+.p-0 {padding: 0rem; }
 .p-1 {padding: .25rem; }
 .p-2 {padding: .5rem; }
 .p-3 {padding: .75rem; }
@@ -74,6 +76,37 @@
 
 
 
+
+/*****************
+***    Text    ***
+******************/
+
+.text-decoration-none {text-decoration: none; }
+.text-center {text-align: center;}
+.text-uppercase { text-transform: uppercase; }
+.text-bold { font-weight: bold; }
+
+
+
+
+
+/*****************
+*** Text Size ***
+******************/
+
+.text-size-4xs { font-size: 1rem; }
+.text-size-3xs { font-size: 1.1rem; }
+.text-size-xxs { font-size: 1.2rem; }
+.text-size-xs { font-size: 1.4rem; }
+.text-size-sm { font-size: 1.6rem; }
+.text-size-md { font-size: 1.8rem; }
+.text-size-lg { font-size: 2rem; }
+.text-size-xl { font-size: 2.5rem; }
+.text-size-xxl { font-size: 3rem; }
+
+
+
+
 /******************
 *** Text Colors ***
 ******************/
@@ -88,28 +121,45 @@
 
 
 
-
-
-
-/*****************
-*** Typography ***
+/******************
+***  Headings   ***
 ******************/
 
-.text-decoration-none {text-decoration: none; }
-.text-center {text-align: center;}
-.text-uppercase { text-transform: uppercase; }
-.text-bold { font-weight: bold; }
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: "Dosis", "Open Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: .1rem;
+} */
 
-.text-size-4xs { font-size: 1rem; }
-.text-size-3xs { font-size: 1.1rem; }
-.text-size-xxs { font-size: 1.2rem; }
-.text-size-xs { font-size: 1.4rem; }
-.text-size-sm { font-size: 1.6rem; }
-.text-size-md { font-size: 1.8rem; }
-.text-size-lg { font-size: 2rem; }
-.text-size-xl { font-size: 2.5rem; }
-.text-size-xxl { font-size: 3rem; }
 
+h1 {
+    font-family: "Balsamiq Sans", "Dosis", "Open Sans", "sans-serif";
+    font-weight: 200;
+    /* letter-spacing: .2rem; */
+    color: var(--color-dark-gray);
+    font-size: 2.1rem;
+    line-height: 2rem;
+}
+
+
+
+h3
+/* category */ {
+    font-family: "Balsamiq Sans", "Dosis", "Open Sans", "sans-serif";
+    font-weight: 200;
+    font-size: 1.7rem;
+    color: #b4b4b4;
+}
+
+
+h4
+/* price */ {
+    font-family: "Balsamiq Sans", "Dosis", "Open Sans", "sans-serif";
+    font-weight: 200;
+    font-size: 1.7rem;
+    color: var(--color-dark-gray);
+    line-height: 5rem;
+}
 
 
 
@@ -143,6 +193,7 @@
 .position-absolute { position: absolute !important; }
 
 .icon-number-pos { top: -.5rem; right: -1.2rem; }
+.price-off-pos { top: 0rem; left: -.1rem; }
 
 
 
@@ -183,12 +234,16 @@
 .width-0-1 {width: .1rem;}
 .width-2 {width: 2rem;}
 .width-3 {width: 3rem;}
-.width-7 {width: 7rem;}
-.width-9 {width: 9rem;}
-.width-15 {width: 15rem;}
 .width-22 {width: 22rem;}
 .width-30 {width: 30rem;}
 .width-100p {width: 100%;}
+
+.min-width-menu {min-width: 27rem;}
+.width-menu-symbol {width: 2rem;}
+.width-logo {width: 7rem;}
+.width-user {width: 9rem;}
+.width-img {width: 15rem;}
+.max-width-product-box {max-width: 50rem;}
 
 
 
@@ -199,6 +254,7 @@
 
 .height-100p {height: 100%;}
 .height-0-1 {height: .1rem;}
+.height-5{height: 5rem;}
 
 
 
@@ -210,3 +266,12 @@
 ***************/
 
 .circle-size-small { border-radius: 100%; width: 1.7rem; height: 1.7rem;}
+.symbole-style { font-size: 2rem; color: var(--color-dark-gray); }
+.price-off-style {
+    background-color: var(--color-green);
+    font-size: 1.3rem;
+    padding: .6rem;
+    line-height: .7rem;
+    color: var(--color-light);
+    font-weight: bold;
+}
