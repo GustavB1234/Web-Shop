@@ -5,21 +5,22 @@
 *************/
 
 --color-white:#ffffff;
---color-light:#f8f9fa;
+--color-light:#f0f0f0;
 --color-light-gray: rgb(235, 235, 235);
 --color-gray: rgb(194, 194, 194);
 --color-dark-gray: #7c7c7c;
 --color-very-dark-gray: #444444;
 --color-green: rgb(0, 207, 0);
 --color-blue: rgb(85, 153, 255);
-
-
-
     
 }
 
 
 
+
+/***************
+*** Settings ***
+****************/
 
 * {
     margin: 0;
@@ -41,21 +42,7 @@ body {
     /* min-height: 100vh; */
 }
 
-a {
-    text-decoration: none;
-    color:var(--color-very-dark-gray);
-}
-
-nav a:hover {
-    text-decoration: none;
-    color:var(--color-blue);
-}
-
-
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62,5%  */
 }
-
-
-
