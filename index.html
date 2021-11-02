@@ -28,24 +28,31 @@
     <header class="d-flex justify-content-between align-items-center bg-very-dark-gray text-light">
 
         <!-- sakerna till vänster-->
-        <div class="d-flex width-30 bg-red2">
+        <div class="d-flex width-30 bg-red">
             <a href="#"
                 class="d-flex align-items-center justify-content-center border-small-light border-radius ml-4 bg-blue2">
-                <i class="fa fa-user mx-2 text-size-xxs"></i>
-                <div class="">James Trump</div>
-                <i class="fas fa-sort-down align-self-flex-start mt-2 mx-2 text-size-xxs"></i>
+                <i class="fa fa-user lh-lg mx-3 text-size-xxs"></i>
+                <div class="d-xs-none">James Trump</div>
+                <i class="fa fa-chevron-down lh-lg mx-3 text-size-xxs"></i>
+                <!-- <i class="fas fa-chevron-down align-self-flex-start mt-2 mx-2 text-size-xxs bg-green"></i> -->
             </a>
         </div>
 
         <!-- sakerna i mitten-->
-        <div class="d-flex align-items-center text-size-sm bg-blue2">
-            <i class="fas fa-phone-alt mr-2"></i>
-            <div class="mr-6">555 555 5555</div>
-            <a href="#" class="text-decoration-none"><i class="fas fa-envelope mr-2"></i>info@mystore.com</a>
+        <div class="d-flex d-sm-none">
+            <div class="d-flex d-ld-none align-items-center text-size-sm bg-blue">
+                <i class="fas fa-phone-alt mr-2"></i>
+                <div class="mr-6">555 555 5555</div>
+            </div>
+            <a href="#" class="text-decoration-none bg-red">
+                <i class="fas fa-envelope mr-2"></i>
+                info@mystore.com
+            </a>
         </div>
+        
 
         <!-- sakerna till höger-->
-        <div class="d-flex justify-content-right width-30 bg-red2">
+        <div class="d-flex justify-content-right width-30 bg-red">
             <div class="d-flex align-items-center text-size-xxl mr-4 bg-blue2">
                 <a href="#" class="mr-2 a-hover"><i class="fab fa-facebook-square"></i></a>
                 <a href="#" class="mr-2 a-hover"><i class="fab fa-twitter-square"></i></a>
@@ -58,27 +65,46 @@
 
 
     <!-- second header -->
-    <header class="d-flex align-items-center py-6 px-4 bg-red2">
+    <header class="d-flex flex-sm-wrap flex-xs-column justify-content-center align-items-center py-2 px-4 bg-red2">
 
         <!-- sakerna till vänster-->
-        <a href="#"><img class="width-logo mr-6 ml-2" src="images/logo/logo.png" alt="My Store logo"></a>
+        <a href="#"><img class="width-logo order-sm-1 ml-2 mr-3" src="images/logo/logo.png" alt="My Store logo"></a>
 
         <!-- sakerna i mitten-->
-        <div class="d-flex flex-grow mr-6 bg-blue">
+        <div class="d-flex width-100p order-sm-3 bg-blue">
             <div
                 class="d-flex justify-content-center align-items-center bg-light-gray border-small-gray-t-b-l px-3-5 py-3">
                 <i class="fas fa-search text-dark-gray text-size-xxs"></i>
             </div>
             <input type="text" placeholder="Search products"
-                class="text-size-xxs width-100p p-2 border-small-gray text-green">
+                class="text-size-xxs width-100p p-2 border-small-gray text-green2">
         </div>
 
         <!-- sakerna till höger-->
-        <div class="d-flex bg-red2">
+        <div class="d-flex order-sm-2 mb-4 mt-4 ml-3 bg-red2">
+
+
+
+            <!-- menu-icon -->
+
+            <a href="#"
+                class="d-none d-md-flex flex-column justify-content-center align-items-center text-very-dark-gray bg-blue2">
+                <div class="d-flex justify-content-center mb-2 position-relative">
+                    <i class="fas fa-bars text-size-lg bg-red2"></i>
+                </div>
+                <div class="text-size-3xs">
+                    MENU
+                </div>
+            </a>
+
+
+            <div class="d-none d-md-flex d-sm-block bg-gray width-0-1 ml-6 mr-4"></div>
+
 
             <!-- heart -->
-            <a href="#" class="d-flex flex-column justify-content-center align-items-center text-very-dark-gray bg-blue2">
-                <div class="position-relative">
+            <a href="#"
+                class="d-flex flex-column justify-content-center align-items-center text-very-dark-gray bg-blue2">
+                <div class="d-flex justify-content-center mb-2 position-relative">
                     <i class="fas fa-heart text-size-lg"></i>
                     <span
                         class="d-flex justify-content-center align-items-center position-absolute icon-number-pos circle-size-small border-small-white text-white text-size-3xs bg-green">
@@ -95,8 +121,9 @@
 
 
             <!-- shopping-cart -->
-            <a href="#" class="d-flex flex-column justify-content-center align-items-center position-relative text-very-dark-gray bg-blue2">
-                <div class="position-relative">
+            <a href="#"
+                class="d-flex flex-column justify-content-center align-items-center position-relative text-very-dark-gray bg-blue2">
+                <div class="d-flex justify-content-center mb-2 position-relative">
                     <i class="fas fa-shopping-cart text-size-lg"></i>
                     <span
                         class="d-flex justify-content-center align-items-center position-absolute icon-number-pos circle-size-small border-small-white text-white text-size-3xs bg-green">
@@ -115,7 +142,7 @@
             <!-- banknote -->
             <a href="#"
                 class="d-flex flex-column justify-content-center align-items-center position-relative mr-2 text-very-dark-gray bg-blue2">
-                <div class="position-relative">
+                <div class="d-flex justify-content-center mb-2 position-relative">
                     <i class="fas fa-file-invoice-dollar text-size-lg"></i>
                     <span
                         class="d-flex justify-content-center align-items-center position-absolute icon-number-pos circle-size-small border-small-white text-white text-size-3xs bg-green">
@@ -137,10 +164,10 @@
 
 
     <!-- main content  - menu area + show products area -->
-    <section class="d-flex bg-red2">
+    <section class="d-flex flex-md-column bg-red2">
 
         <!-- menu area -->
-        <nav class="d-flex flex-column min-width-menu ml-6 bg-red2">
+        <nav class="d-flex flex-column min-width-menu mb-6 ml-6 ml-md-0px bg-red2">
 
             <!-- one box in the menu -->
             <section class="border-small-gray p-4 pr-8">
@@ -258,12 +285,12 @@
 
 
         <!-- show products area -->
-        <section class="d-flex flex-wrap bg-green2">
+        <section class="d-flex flex-wrap mr-6 bg-green2">
 
 
             <!-- one box -->
             <section
-                class="d-flex align-self-flex-start max-width-product-box border-small-gray ml-8 mb-8 p-6 bg-blue2">
+                class="d-flex flex-grow align-self-flex-start max-width-product-box widht-sm-100p border-small-gray ml-6 mb-6 p-6 bg-blue2">
 
 
                 <!-- left side -->
@@ -273,8 +300,8 @@
 
 
                 <!-- right side -->
-                <div class="d-flex flex-column bg-red2">
-                    <div class="d-flex justify-content-between align-items-center bg-green2">
+                <div class="d-flex flex-grow flex-column bg-red2">
+                    <div class="d-flex justify-content-between align-items-flex-start bg-green2">
                         <h1>Asus Laptop 14 in.</h1>
                         <a href="#"><i class="far fa-heart symbole-style"></i></a>
                     </div>
@@ -297,7 +324,7 @@
 
             <!-- one box -->
             <section
-                class="d-flex align-self-flex-start max-width-product-box position-relative border-small-gray ml-8 mb-8 p-6 bg-blue2">
+                class="d-flex flex-grow align-self-flex-start max-width-product-box position-relative border-small-gray ml-6 mb-6 p-6 bg-blue2">
 
 
                 <!-- left side -->
@@ -307,8 +334,8 @@
 
 
                 <!-- right side -->
-                <div class="d-flex flex-column bg-red2">
-                    <div class="d-flex justify-content-between align-items-center bg-green2">
+                <div class="d-flex flex-grow flex-column bg-red2">
+                    <div class="d-flex justify-content-between align-items-flex-start bg-green2">
                         <h1>Asus Laptop II 24 in.</h1>
                         <a href="#"><i class="far fa-heart symbole-style"></i></a>
                     </div>
@@ -332,7 +359,7 @@
 
             <!-- one box -->
             <section
-                class="d-flex align-self-flex-start max-width-product-box border-small-gray ml-8 mb-8 p-6 bg-blue2">
+                class="d-flex flex-grow align-self-flex-start max-width-product-box border-small-gray ml-6 mb-6 p-6 bg-blue2">
 
 
                 <!-- left side -->
@@ -342,8 +369,8 @@
 
 
                 <!-- right side -->
-                <div class="d-flex flex-column bg-red2">
-                    <div class="d-flex justify-content-between align-items-center bg-green2">
+                <div class="d-flex flex-grow flex-column bg-red2">
+                    <div class="d-flex justify-content-between align-items-flex-start bg-green2">
                         <h1>Phlipps Wristwatch</h1>
                         <a href="#"><i class="far fa-heart symbole-style"></i></a>
                     </div>
@@ -364,7 +391,7 @@
 
             <!-- one box -->
             <section
-                class="d-flex align-self-flex-start max-width-product-box border-small-gray ml-8 mb-8 p-6 bg-blue2">
+                class="d-flex flex-grow align-self-flex-start max-width-product-box border-small-gray ml-6 mb-6 p-6 bg-blue2">
 
 
                 <!-- left side -->
@@ -374,8 +401,8 @@
 
 
                 <!-- right side -->
-                <div class="d-flex flex-column bg-red2">
-                    <div class="d-flex justify-content-between align-items-center bg-green2">
+                <div class="d-flex flex-grow flex-column bg-red2">
+                    <div class="d-flex justify-content-between align-items-flex-start bg-green2">
                         <h1>HP Printer 400</h1>
                         <a href="#"><i class="far fa-heart symbole-style"></i></a>
                     </div>
@@ -397,7 +424,7 @@
 
             <!-- one box -->
             <section
-                class="d-flex align-self-flex-start max-width-product-box border-small-gray ml-8 mb-8 p-6 bg-blue2">
+                class="d-flex flex-grow align-self-flex-start max-width-product-box border-small-gray ml-6 mb-6 p-6 bg-blue2">
 
 
                 <!-- left side -->
@@ -407,8 +434,8 @@
 
 
                 <!-- right side -->
-                <div class="d-flex flex-column bg-red2">
-                    <div class="d-flex justify-content-between align-items-center bg-green2">
+                <div class="d-flex flex-grow flex-column bg-red2">
+                    <div class="d-flex justify-content-between align-items-flex-start bg-green2">
                         <h1>Sony Headspeakers</h1>
                         <a href="#"><i class="fas fa-heart symbole-style"></i></a>
                     </div>

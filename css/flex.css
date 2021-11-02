@@ -19,6 +19,8 @@
 .flex-wrap {flex-wrap: wrap; }
 
 
+
+
 /*********************
 *** Align & Justify***
 *********************/
@@ -28,6 +30,7 @@
 .justify-content-right { justify-content: right; } 
 .justify-content-around { justify-content: space-around; } 
 .align-items-center{ align-items: center; } 
+.align-items-flex-start { align-items:flex-start;}
 .align-self-right { align-self: right;}
 .align-self-center { align-self: center;}
 .align-self-flex-start { align-self: flex-start;}
