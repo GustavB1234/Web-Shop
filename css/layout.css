@@ -254,7 +254,6 @@ nav a:hover {
 
 
 
-
 /*************
 *** Widths ***
 **************/
@@ -267,7 +266,6 @@ nav a:hover {
 .width-100p {width: 100%;}
 .width-auto {width: auto;}
 
-/* .width-30 {width: 30rem;} */
 .min-width-menu {min-width: 27rem;}
 .width-menu-symbol {width: 2rem;}
 .width-logo {width: 7rem;}
@@ -305,3 +303,50 @@ nav a:hover {
     color: var(--color-light);
     font-weight: bold;
 }
+
+button {
+    font-family: Open Sans, sans-serif;
+    background-color: var(--color-very-dark-gray);
+    border: none;
+    cursor: pointer;
+    color: var(--color-light)
+}
+
+
+
+
+
+/*************
+** Dropdown **
+**************/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+
+    color: var(--color-very-dark-gray);
+    background-color: var(--color-light);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border:  .1rem solid var(--color-very-dark-gray);
+
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    line-height: 2.5rem;
+
+    min-width: 15rem;
+    z-index: 1;
+
+    font-size: 1.3rem;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

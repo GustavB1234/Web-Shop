@@ -25,26 +25,37 @@
 
 
     <!-- first header -->
-    <header class="d-flex justify-content-between align-items-center bg-very-dark-gray text-light">
+    <header class="d-flex justify-content-between align-items-center bg-very-dark-gray text-light position-relative">
 
         <!-- sakerna till vänster-->
-        <div class="d-flex width-30 bg-red">
-            <a href="#"
-                class="d-flex align-items-center justify-content-center border-small-light border-radius ml-4 bg-blue2">
+        <div class="width-30 bg-red2">
+            <div class="dropdown">
+            <button class="d-flex align-items-center justify-content-center border-small-light border-radius ml-4">
+                
                 <i class="fa fa-user lh-lg mx-3 text-size-xxs"></i>
-                <div class="d-xs-none">James Trump</div>
+                <p class="d-xs-none">James Bond</p>
                 <i class="fa fa-chevron-down lh-lg mx-3 text-size-xxs"></i>
-                <!-- <i class="fas fa-chevron-down align-self-flex-start mt-2 mx-2 text-size-xxs bg-green"></i> -->
-            </a>
+
+            </button>
+            <div class="d-flex dropdown-content">
+                <a href="#" class="text-very-dark-gray">James Bond</a>
+                <a href="#" class="text-very-dark-gray">John Cook</a>
+                <a href="#" class="text-very-dark-gray">Adam White</a>
+            </div>
         </div>
+    </div>
+
+<!-- dropdown -->
+
+
 
         <!-- sakerna i mitten-->
-        <div class="d-flex d-sm-none">
-            <div class="d-flex d-ld-none align-items-center text-size-sm bg-blue">
+        <div class="d-flex d-md-none">
+            <div class="d-flex d-ld-none align-items-center text-size-sm bg-blue2">
                 <i class="fas fa-phone-alt mr-2"></i>
                 <div class="mr-6">555 555 5555</div>
             </div>
-            <a href="#" class="text-decoration-none bg-red">
+            <a href="#" class="text-decoration-none bg-red2">
                 <i class="fas fa-envelope mr-2"></i>
                 info@mystore.com
             </a>
@@ -52,7 +63,7 @@
         
 
         <!-- sakerna till höger-->
-        <div class="d-flex justify-content-right width-30 bg-red">
+        <div class="d-flex justify-content-right width-30 bg-red2">
             <div class="d-flex align-items-center text-size-xxl mr-4 bg-blue2">
                 <a href="#" class="mr-2 a-hover"><i class="fab fa-facebook-square"></i></a>
                 <a href="#" class="mr-2 a-hover"><i class="fab fa-twitter-square"></i></a>
